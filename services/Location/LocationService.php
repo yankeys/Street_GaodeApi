@@ -105,7 +105,7 @@ class LocationService
     public function handleInfo($inData)
     {
         $a = 1;
-        $reData[] = [];
+        $reData = [];
         $LocationData = [];
         // 父级名字
         $pname = $inData['name'];
@@ -154,7 +154,7 @@ class LocationService
             ];
             $a++;
         }
-        unset($reData['0']);
+
         return $reData;
     }
 
